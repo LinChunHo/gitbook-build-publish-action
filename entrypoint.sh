@@ -54,7 +54,7 @@ cd ${GITHUB_WORKSPACE}
 ls -al
 
 echo '[INFO] Clone repository and switch to branch gh-pages...'
-git clone "https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git" ${GH_PAGES_FOLDER}
+git clone "https://github.com/${GITHUB_REPOSITORY}.git" ${GH_PAGES_FOLDER}
 checkIfErr
 cd ${GH_PAGES_FOLDER}
 git checkout -b gh-pages
